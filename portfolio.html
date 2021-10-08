@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!--  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/GridGallery/css/component.css"
+    />
+    <link rel="stylesheet" type="text/css" href="js/GridGallery/css/demo.css" />
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <!-- font awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--  header-->
+    <header class="header">
+      <ul class="list-unstyled header__links d-none d-lg-block d-xl-block">
+        <li class="header__item active">
+          <i class="fa fa-home header__icon"></i>
+          <a href="index.html" class="header__link">
+            <span class="header__label">HOME</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-user-alt header__icon"></i>
+          <a href="about.html" class="header__link">
+            <span class="header__label">About</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-briefcase header__icon"></i>
+          <a href="#" class="header__link">
+            <span class="header__label">PORTFOLIO</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-envelope-open header__icon"></i>
+          <a href="#" class="header__link">
+            <span class="header__label">contact</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-comment header__icon"></i>
+          <a href="#" class="header__link">
+            <span class="header__label">blog</span>
+          </a>
+        </li>
+      </ul>
+      <!--  -->
+      <nav role="navigation" class="nav d-block d-lg-none">
+        <div class="navbar">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="list-unstyled navbar__menu">
+            <li class="active navbar__item">
+              <a href="index.html"
+                ><i class="fa fa-home"></i><span>Home</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="about.html"
+                ><i class="fa fa-user"></i><span>About</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#"
+                ><i class="fa fa-briefcase"></i><span>Portfolio</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#"
+                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#"><i class="fa fa-comments"></i><span>Blog</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--  header-->
+
+    <section class="about__top">
+      <h2 class="about__top__title">MY <span>portfolio</span></h2>
+      <span class="about__top__span">WORK</span>
+    </section>
+
+    <!--  -->
+    <div id="grid-gallery" class="grid-gallery">
+      <section class="grid-wrap">
+        <ul class="grid">
+          <li class="grid-sizer"></li>
+          <!-- for Masonry column width -->
+          <li>
+            <figure>
+              <img src="img/thumb/1.png" alt="img01" />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="img/thumb/6.png" alt="img06" />
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <!--  grid-wrap -->
+      <section class="slideshow">
+        <ul>
+          <li>
+            <figure>
+              <figcaption>
+                <h3>Letterpress asymmetrical</h3>
+                <p>
+                  Kale chips lomo biodiesel stumptown Godard Tumblr, mustache
+                  sriracha tattooed cray aute slow-carb placeat delectus.
+                  Letterpress asymmetrical fanny pack art party est pour-over
+                  skateboard anim quis, ullamco craft beer.
+                </p>
+              </figcaption>
+              <img src="img/large/1.png" alt="img01" />
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <figcaption>
+                <h3>Vice velit chia</h3>
+                <p>
+                  Chillwave Echo Park Etsy organic Cosby sweater seitan
+                  authentic pour-over. Occupy wolf selvage bespoke tattooed,
+                  cred sustainable Odd Future hashtag butcher.
+                </p>
+              </figcaption>
+              <img src="img/large/2.png" alt="img02" />
+            </figure>
+          </li>
+        </ul>
+        <nav>
+          <span class="icon nav-prev"></span>
+          <span class="icon nav-next"></span>
+          <span class="icon nav-close"></span>
+        </nav>
+       </section>
+      <!--  slideshow -->
+    </div>
+    <!--  grid-gallery -->
+
+    <!--  -->
+    <script src="js/GridGallery/js/modernizr.custom.js"></script>
+    <script src="js/GridGallery/js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/GridGallery/js/masonry.pkgd.min.js"></script>
+    <script src="js/GridGallery/js/classie.js"></script>
+    <script src="js/GridGallery/js/cbpGridGallery.js"></script>
+    <script>
+      new CBPGridGallery(document.getElementById("grid-gallery"));
+    </script>
+    <!--  -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

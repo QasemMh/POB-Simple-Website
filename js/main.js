@@ -26,14 +26,24 @@ if (get_("#typed__target")) {
     backDelay: 1500,
   });
 }
-//
 
-let index = 1;
-const data = setInterval(() => {
-  if (index == get_(".about__values").dataset.value) {
-    clearInterval(data);
-  }
+//about
 
-  get_(".about__values").innerHTML = index;
-  index++;
-}, 50);
+function counterUp(item, end) {
+  let index = 1;
+  const counter = setInterval(() => {
+    item.innerHTML = index;
+
+    if (index == end) {
+      clearInterval(counter);
+    }
+    index++;
+  }, 50);
+}
+if (get_(".about__values")) {
+  const count_item = getAll_(".about__values");
+  counterUp(count_item[0], count_item[0].dataset.value);
+  counterUp(count_item[1], count_item[1].dataset.value);
+  counterUp(count_item[2], count_item[2].dataset.value);
+  counterUp(count_item[3], count_item[3].dataset.value);
+}
