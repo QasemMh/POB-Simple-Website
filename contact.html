@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <!-- font awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- my style -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div>
+    </div>
+
+    <!--  header-->
+    <header class="header">
+      <ul class="list-unstyled header__links d-none d-lg-block d-xl-block">
+        <li class="header__item">
+          <i class="fa fa-home header__icon"></i>
+          <a href="index.html" class="header__link">
+            <span class="header__label">HOME</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-user-alt header__icon"></i>
+          <a href="about.html" class="header__link">
+            <span class="header__label">About</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-briefcase header__icon"></i>
+          <a href="portfolio.html" class="header__link">
+            <span class="header__label">PORTFOLIO</span>
+          </a>
+        </li>
+        <li class="header__item active">
+          <i class="fa fa-envelope-open header__icon"></i>
+          <a href="contact.html" class="header__link">
+            <span class="header__label">contact</span>
+          </a>
+        </li>
+        <li class="header__item">
+          <i class="fa fa-comment header__icon"></i>
+          <a href="#" class="header__link">
+            <span class="header__label">blog</span>
+          </a>
+        </li>
+      </ul>
+      <!--  -->
+      <nav role="navigation" class="nav d-block d-lg-none">
+        <div class="navbar">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="list-unstyled navbar__menu">
+            <li class="active navbar__item">
+              <a href="index.html"
+                ><i class="fa fa-home"></i><span>Home</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="about.html"
+                ><i class="fa fa-user"></i><span>About</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="portfolio.html"
+                ><i class="fa fa-briefcase"></i><span>Portfolio</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="contact.html"
+                ><i class="fa fa-envelope-open"></i><span>Contact</span></a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="#"><i class="fa fa-comments"></i><span>Blog</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!--  header-->
+
+    <section class="about__top">
+      <h2 class="about__top__title">Contact <span>ME</span></h2>
+      <span class="about__top__span">Contact</span>
+    </section>
+
+    <!--  -->
+    <div class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4">
+            <h2 class="text-uppercase mb-4">Contact Me</h2>
+            <p class="mb-3">
+              Feel free to get in touch with me. I am always open to discussing
+              new projects, creative ideas or opportunities to be part of your
+              visions.
+            </p>
+            <p class="custom-span-contact position-relative">
+              <i class="fa fa-envelope-open position-absolute"></i>
+              <span class="d-block">mail me</span>Qasem@gmail.com
+            </p>
+            <p class="custom-span-contact position-relative">
+              <i class="fa fa-phone-square position-absolute"></i>
+              <span class="d-block">call me</span>+216 21 184 010
+            </p>
+
+            <ul class="social list-unstyled">
+              <li class="facebook">
+                <a title="Facebook" href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="twitter">
+                <a title="Twitter" href="#"> <i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="youtube">
+                <a title="Youtube" href="#"> <i class="fab fa-youtube"></i></a>
+              </li>
+              <li class="dribbble">
+                <a title="Dribbble" href="#">
+                  <i class="fab fa-dribbble"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!--  -->
+          <div class="col-12 col-lg-8">
+            <form
+              class="contactform"
+              method="post"
+              action="php/process-form.php"
+            >
+              <div class="contactform">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <input type="text" name="name" placeholder="YOUR NAME" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input type="email" name="email" placeholder="YOUR EMAIL" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="YOUR SUBJECT"
+                    />
+                  </div>
+                  <div class="col-12">
+                    <textarea
+                      name="message"
+                      placeholder="YOUR MESSAGE"
+                    ></textarea>
+                    <a href="#" class="home__link" role="button">Send Message 
+                        <i class="home__icon fa fa-external-link-alt"></i>
+                </a>
+                  </div>
+                  <div class="col-12 form-message">
+                    <span
+                      class="
+                        output_message
+                        text-center
+                        font-weight-600
+                        text-uppercase
+                      "
+                    ></span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
