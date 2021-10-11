@@ -437,11 +437,17 @@ i {
 }
 
 /* Portfolio */
-
-
-
-
-
+.slideshow li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #252525;
+  z-index: -1;
+  transition: opacity 0.3s;
+}
 
 /*  */
 /* MEDIA QUERY */
@@ -638,7 +644,10 @@ i {
     left: -20px;
     border-color: transparent #252525 transparent transparent;
   }
-  /*  */
+  /* porto */
+  .grid li {
+    width: 45%;
+  }
 }
 @media (max-width: 576px) {
   /* home */
@@ -707,6 +716,10 @@ i {
   .navbar {
     top: 3px;
     z-index: 3;
-     
+  }
+
+  /* porto */
+  .grid li {
+    width: 100%;
   }
 }
