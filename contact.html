@@ -53,7 +53,7 @@
         </li>
         <li class="header__item">
           <i class="fa fa-comment header__icon"></i>
-          <a href="#" class="header__link">
+          <a href="blog.html" class="header__link">
             <span class="header__label">blog</span>
           </a>
         </li>
@@ -87,7 +87,9 @@
               >
             </li>
             <li class="navbar__item">
-              <a href="#"><i class="fa fa-comments"></i><span>Blog</span></a>
+              <a href="blog.html"
+                ><i class="fa fa-comments"></i><span>Blog</span></a
+              >
             </li>
           </ul>
         </div>
@@ -99,7 +101,38 @@
       <h2 class="about__top__title">Contact <span>ME</span></h2>
       <span class="about__top__span">Contact</span>
     </section>
+    <!-- theme switcher -->
+    <div
+      id="switcher-main"
+      class="switcher"
+      style="margin-left: -1000px; display: block"
+    >
+      <div class="switcher__content">
+        <h4>STYLE SWITCHER</h4>
+        <div id="hideSwitcher">×</div>
+        <div class="switcher__color">
+          <span id="color-1" data-color="red"></span>
+          <span id="color-2" data-color="blue"></span>
+          <span id="color-3" data-color="#82B440"></span>
+          <span id="color-4" data-color="#F179A2"></span>
+          <span id="color-5" data-color="#FFB400"></span>
+          <span id="color-6" data-color="#07c"></span>
+          <span id="color-7" data-color="#72B626"></span>
+          <span id="color-8" data-color="#8A2BE2"></span>
+        </div>
+        <div class="switcher__content_theme">
+          <div>
+            <h3>🌝</h3>
+            <h3 class="active">🌚</h3>
+          </div>
+        </div>
+        
+      </div>
+    </div>
 
+    <div id="showSwitcher" class="switcher-icon" style="margin-left: 0">
+      <i class="fa fa-cog fa-spin"></i>
+    </div>
     <!--  -->
     <div class="contact">
       <div class="container">
@@ -166,9 +199,10 @@
                       name="message"
                       placeholder="YOUR MESSAGE"
                     ></textarea>
-                    <a href="#" class="home__link" role="button">Send Message 
-                        <i class="home__icon fa fa-external-link-alt"></i>
-                </a>
+                    <a href="#" class="home__link" role="button"
+                      >Send Message
+                      <i class="home__icon fa fa-external-link-alt"></i>
+                    </a>
                   </div>
                   <div class="col-12 form-message">
                     <span
