@@ -17,40 +17,6 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <!-- theme switcher -->
-    <div
-      id="switcher-main"
-      class="switcher"
-      style="margin-left: -1000px; display: block"
-    >
-      <div class="switcher__content">
-        <h4>STYLE SWITCHER</h4>
-        <div id="hideSwitcher">×</div>
-        <div class="switcher__color">
-          <span id="color-1" data-color="red"></span>
-          <span id="color-2" data-color="blue"></span>
-          <span id="color-3" data-color="#82B440"></span>
-          <span id="color-4" data-color="#F179A2"></span>
-          <span id="color-5" data-color="#FFB400"></span>
-          <span id="color-6" data-color="#07c"></span>
-          <span id="color-7" data-color="#72B626"></span>
-          <span id="color-8" data-color="#8A2BE2"></span>
-
-          <div class="switcher__content_theme">
-            <div>
-              <h3>🌝</h3>
-              <h3 class="active">🌚</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="showSwitcher" class="switcher-icon" style="margin-left: 0">
-      <i class="fa fa-cog fa-spin"></i>
-    </div>
-
-    <!-- loading -->
     <div id="loader-wrapper">
       <div id="loader"></div>
 
@@ -61,7 +27,7 @@
     <!--  header-->
     <header class="header">
       <ul class="list-unstyled header__links d-none d-lg-block d-xl-block">
-        <li class="header__item active">
+        <li class="header__item">
           <i class="fa fa-home header__icon"></i>
           <a href="index.html" class="header__link">
             <span class="header__label">HOME</span>
@@ -79,7 +45,7 @@
             <span class="header__label">PORTFOLIO</span>
           </a>
         </li>
-        <li class="header__item">
+        <li class="header__item active">
           <i class="fa fa-envelope-open header__icon"></i>
           <a href="contact.html" class="header__link">
             <span class="header__label">contact</span>
@@ -121,9 +87,7 @@
               >
             </li>
             <li class="navbar__item">
-              <a href="blog.html"
-                ><i class="fa fa-comments"></i><span>Blog</span></a
-              >
+              <a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a>
             </li>
           </ul>
         </div>
@@ -131,37 +95,47 @@
     </header>
     <!--  header-->
 
-    <!-- HOME -->
-    <div class="aside"></div>
-    <div id="typed-strings">
-      <p>Creative Developer.</p>
-      <p>Designer.</p>
-      <p>Blogger.</p>
-      <p>Web Developer.</p>
-    </div>
 
-    <section class="home">
-      <div class="home__image"></div>
-      <div class="home__about">
-        <h2 class="home__title">
-          <span class="home__title-sub">I'M Qasem.</span><br />
-          <span id="typed__target"></span>
-        </h2>
-        <p class="home__text">
-          I'm a web designer & front‑end developer focused on crafting clean &
-          user‑friendly experiences, I am passionate about building excellent
-          software that improves the lives of those around me.
-        </p>
-        <a href="about.html" class="home__link" role="button"
-          >About Me <i class="home__icon fa fa-arrow-right"></i
-        ></a>
-      </div>
+    <section class="about__top">
+      <h2 class="about__top__title">My <span>Blog</span></h2>
+      <span class="about__top__span">post</span>
     </section>
-    <!-- HOME -->
+    <!--  -->
 
-    <script src="js/typed.min.js"></script>
+       <!-- theme switcher -->
+       <div
+       id="switcher-main"
+       class="switcher"
+       style="margin-left: -1000px; display: block"
+     >
+       <div class="switcher__content">
+         <h4>STYLE SWITCHER</h4>
+         <div id="hideSwitcher">×</div>
+         <div class="switcher__color">
+          <span id="color-1" data-color="red"></span>
+          <span id="color-2" data-color="blue"></span>
+          <span id="color-3" data-color="#82B440"></span>
+          <span id="color-4" data-color="#F179A2"></span>
+          <span id="color-5" data-color="#FFB400"></span>
+          <span id="color-6" data-color="#07c"></span>
+          <span id="color-7" data-color="#72B626"></span>
+          <span id="color-8" data-color="#8A2BE2"></span>
+         </div>
+         <div class="switcher__content_theme">
+          <div>
+            <h3>🌝</h3>
+            <h3 class="active">🌚</h3>
+          </div>
+        </div>
+        
+       </div>
+     </div>
+ 
+     <div id="showSwitcher" class="switcher-icon" style="margin-left: 0">
+       <i class="fa fa-cog fa-spin"></i>
+     </div>
+    
     <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/main.js"></script>
   </body>
 </html>
